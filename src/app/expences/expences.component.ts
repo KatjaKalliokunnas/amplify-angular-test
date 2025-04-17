@@ -5,9 +5,10 @@ import { Schema } from '../../../amplify/data/resource';
 const client = generateClient<Schema>();
 
 @Component({
-  selector: 'app-expences',
-  templateUrl: './expences.component.html',
-  styleUrl: './expences.component.css',
+    selector: 'app-expences',
+    templateUrl: './expences.component.html',
+    styleUrl: './expences.component.css',
+    standalone: false
 })
 export class ExpencesComponent {
   todos: any[] = [];
